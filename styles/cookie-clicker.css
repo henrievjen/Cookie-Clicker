@@ -1,0 +1,391 @@
+body {
+    background-color: #87cefa;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+.howTo {
+    position: absolute;
+    background-color: #cce6ff;
+    width: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 17px;
+    cursor: pointer;
+    right: 100px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+}
+
+.howToPopup {
+    position: absolute;
+    z-index: 1;
+    height: 70vh;
+    width: 80vw;
+    top: 15vh;
+    border-radius: 6vw;
+    left: 10vw;
+    right: 10vw;
+    background-color: #e6f3ff;
+    display: none;
+}
+
+.popupX {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: 1vh;
+    right: 2.5vw;
+    cursor: pointer;
+}
+
+.popupParHowTo, .popupParStats, .popupParAchievements, .popupParAbout {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    right: 10%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+.popupParAbout {
+    padding-top: 5%;
+}
+
+.leftNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 375px;
+    background-color: white;
+    border-right: solid;
+    border-bottom: solid;
+}
+
+.leftNav div {
+    position: relative;
+    left: 0;
+    width: inherit;
+    height: 41.7px;
+    text-align: center;
+    padding: 41.7px 0;
+    overflow-wrap: break-word;
+    font-size: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.leftNav div:hover {
+    opacity: .8;
+}
+
+.stats {
+    background-color: #ff6666;
+}
+
+.achievements {
+    background-color: #4d4dff;
+}
+
+.about {
+    background-color: #00cc00;
+}
+
+.statsPopup, .achievementsPopup, .aboutPopup {
+    position: absolute;
+    z-index: 1;
+    height: 70vh;
+    width: 80vw;
+    top: 15vh;
+    border-radius: 6vw;
+    left: 10vw;
+    right: 10vw;
+    background-color: #e6f3ff;
+    display: none;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.statsCategories {
+    position: absolute;
+    height: 50vh;
+    width: 77vw;
+    top: 9vh;
+    left: 3vw;
+    text-align: left;
+    font-size: 100%;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    padding-right: 17px;
+}
+
+.amount {
+    position: relative;
+    width: 60vw;
+    height: auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    margin-left: 20vw;
+}
+
+.achievementSort {
+    position: absolute;
+    top: 20px;
+    width: 80vw;
+    height: 55vh;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.achievementSort::-webkit-scrollbar {
+    display: none;
+}
+
+.achievementSort div {
+    width: 11em;
+    height: 5em;
+    text-align: center;
+    font-size: 100%;
+    background-color: #80c1ff;
+    border-radius: 8%;
+    margin: 1vw;
+    cursor: pointer;
+    display: inline-block;
+    opacity: .3;
+    vertical-align:top
+}
+
+#cookieBox {
+    position: relative;
+    top: 20px;
+    left: 25vw;
+    width: 50vw;
+    text-align: center;
+}
+
+.cookie {
+    position: relative;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.cookie:hover {
+    opacity: 0.85;
+}
+
+.amountUpgrades {
+    position: fixed;
+    bottom: 155px;
+    left: 9.5vw;
+    width: 100vw;
+    height: auto;
+}
+
+.amountClick, .amountMill, .amountFactory, .amountBusiness, .amountMonopoly {
+    display: inline-block;
+    vertical-align: top;
+    width: 15.7vw;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 150px;
+    text-align: center;
+}
+
+.clickUpgrade, .millUpgrade, .factoryUpgrade, .businessUpgrade, .monopolyUpgrade {
+    display: inline-block;
+    vertical-align: top;
+    width: 16vw;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    background-color: #b3d9ff;
+    cursor: pointer;
+}
+
+.clickAmount, .millAmount, .factoryAmount, .businessAmount, .monopolyAmount {
+    position: relative;
+    width: 16vw;
+    bottom: 0;
+    font-size: 28px;
+    overflow-wrap: break-word;
+}
+
+/* No Drag */
+.cookie, .popupX {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+}
+
+.popupX {
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        font-size: 45px;
+    }
+    
+    .amount {
+        font-size: 50px;
+    }
+    
+    .cookie {
+        width: 250px;
+        top: 100px;
+    }
+    
+    .leftNav {
+        width: 140px;
+        height: 275px;
+    }
+    
+    .leftNav div {
+        height: 30.5px;
+        padding: 30.5px 0;
+        font-size: 20px;
+    }
+    
+    .clickUpgrade, .millUpgrade, .factoryUpgrade, .businessUpgrade, .monopolyUpgrade, .clickAmount, .millAmount, .factoryAmount, .businessAmount, .monopolyAmount {
+        font-size: 20px;
+    }
+    
+    .howTo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header, .amount {
+        font-size: 28px;
+    }
+    
+    .cookie {
+        width: 200px;
+        top: 200px;
+    }
+    
+    .leftNav {
+        width: 80px;
+        height: 200px;
+    }
+    
+    .leftNav div {
+        height: 22.2px;
+        padding: 22.2px 0;
+        font-size: 10px;
+    }
+    
+    .clickUpgrade, .millUpgrade, .factoryUpgrade, .businessUpgrade, .monopolyUpgrade, .clickAmount, .millAmount, .factoryAmount, .businessAmount, .monopolyAmount {
+        font-size: 12px;
+    }
+
+    @media only screen and (max-height: 800px) {
+        .cookie {
+            width: 200px;
+            top: 80px;
+        }
+    }
+    
+    @media only screen and (max-height: 600px) {
+        .cookie {
+            width: 100px;
+            top: 0px;
+        }
+    }
+}
+
+@media only screen and (max-height: 750px) {
+        header, .amount {
+            font-size: 38px;
+        }
+    
+        .cookie {
+            width: 200px;
+            top: 60px;
+        }
+}
+
+@media only screen and (max-height: 600px) {
+        header, .amount {
+            font-size: 28px;
+        }
+    
+        .cookie {
+            width: 150px;
+            top: 30px;
+        }
+    
+        .leftNav {
+            width: 130px;
+            height: 275px;
+        }
+    
+        .leftNav div {
+            height: 30.5px;
+            padding: 30.5px 0;
+            font-size: 18px;
+        }
+    
+        .clickUpgrade, .millUpgrade, .factoryUpgrade, .businessUpgrade, .monopolyUpgrade, .clickAmount, .millAmount, .factoryAmount, .businessAmount, .monopolyAmount {
+            font-size: 12px;
+        }
+}
+
+@media only screen and (max-height: 500px) {
+    body {
+        overflow-y: auto;
+    }
+    
+    .cookie {
+        margin-bottom: 100px;
+    }
+    
+    .leftNav {
+        width: 80px;
+        height: 200px;
+    }
+    
+    .leftNav div {
+        height: 18x;
+        padding:18px 0;
+        font-size: 10px;
+    }
+    
+    footer {
+        height: 160px;
+        position: relative;
+    }
+    
+    .amountUpgrades {
+        position: relative;
+        bottom: 8px;
+    }
+}

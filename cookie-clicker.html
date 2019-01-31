@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookie clicker</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/cookie-title.jpg">
+        <link rel="stylesheet" type="text/css" href="styles/cookie-clicker.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="scripts/cookie-clicker.js"></script>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <header>Cookies:</header>
+        
+        <!-- How To Play -->
+        <div class="howTo">How To Play</div>
+            <div class="howToPopup">
+                <img class="popupX" src="images/red-x.png">
+                <p class="popupParHowTo">
+                Welcome to Cookie Clicker<br><br>Click the cookie to earn more cookies. The upgrades allow for you to earn more cookies per click, or earn a certain amount of cookies per second automatically without clicking. As you buy more upgrades, the prices of the upgrades will increase. I hope you like the game.<br><br><br><br>Enjoy!
+                </p>
+            </div>
+        
+        <!-- Left Nav -->
+        <div class="leftNav">
+            <div class="stats">Stats</div>
+            <div class="achievements">Achievements</div>
+            <div class="about">About</div>
+        </div>
+        
+        <div class="statsPopup">
+            <img class="popupX" src="images/red-x.png">
+            <p class="popupParStats">
+                Stats<br><br>
+                <p class="statsCategories">
+                    <span title="Current Amount of Cookies">Cookies: </span><span class="spanCookies">0</span><br><br>
+                    <span title="Cookies per Second">CPS: </span><span class="spanCPS">0</span><br><br>
+                    <span title="Total Cookies Earned (Ever)">Total Cookies: </span><span class="spanTotalCookies">0</span><br><br>
+                    <span title="Total Times Clicked Cookie">Total Clicks: </span><span class="spanClicks">0</span><br><br>
+                    <span title="Total Upgrades Bought">Total Upgrades Owned: </span><span class="spanTotalUpgrades">0</span>
+                </p>
+            </p>
+        </div>
+        
+        <div class="achievementsPopup">
+            <img class="popupX" src="images/red-x.png">
+            <p class="popupParAchievements">
+                <div class="achievementSort">
+                    Achievements<br><br>
+                    <div class="achievementClicker"><u>Clicker</u><br>Click the cookie 100 times</div>
+                    <div class="achievementSuperClicker"><u>Super Clicker</u><br>Click the cookie 10,000 times</div>
+                    <div class="achievementClickUpgrade"><u>Click Upgrade</u><br>Buy your first click upgrade</div>
+                    <div class="achievementClickSuperUpgrade"><u>Click Super Upgrade</u><br>Buy 25 click upgrades</div>
+                    <div class="achievementMiller"><u>Miller</u><br>Buy your first mill upgrade</div>
+                    <div class="achievementSuperMiller"><u>Super Miller</u><br>Buy 25 mill upgrades</div>
+                    <div class="achievementFactory"><u>Factory Worker</u><br>Buy your first factory upgrade</div>
+                    <div class="achievementSuperFactory"><u>Super Factory Worker</u><br>Buy 25 factory upgrades</div>
+                    <div class="achievementBusiness"><u>Businessman</u><br>Buy your first business upgrade</div>
+                    <div class="achievementSuperBusiness"><u>Super Businessman</u><br>Buy 25 business upgrades</div>
+                    <div class="achievementMonopoly"><u>Monopoly</u><br>Buy your first monopoly upgrade</div>
+                    <div class="achievementSuperMonopoly"><u>Super Monopoly</u><br>Buy 25 monopoly upgrades</div>
+                </div>
+            </p>
+        </div>
+        
+        <div class="aboutPopup">
+            <img class="popupX" src="images/red-x.png">
+            <p class="popupParAbout">
+                About<br><br>
+                This Cookie Clicker game is in no way affiliated with Cookie Clicker by Orteil. This game was made with HTML, JavaScript, CSS, and jQuery.<br><br>
+                Please leave a like or share!
+            </p>
+        </div>
+            
+        <!-- Amount of Cookies -->
+        <div class="amount">0</div>
+        
+        <!-- Cookie -->
+        <div id="cookieBox">
+            <img class="cookie" src="images/cookie.svg">
+        </div>
+        
+        <!-- Amount of Upgrades -->
+        <div class="amountUpgrades">
+            <div class="amountClick">0</div>
+            <div class="amountMill">0</div>
+            <div class="amountFactory">0</div>
+            <div class="amountBusiness">0</div>
+            <div class="amountMonopoly">0</div>
+        </div>
+        
+        <!-- Upgrades -->
+        <footer>
+            <div class="clickUpgrade">Click Upgrade<br>+1 click<p class="clickAmount">100</p></div>
+            <div class="millUpgrade">Cookie Mill<br>+10 cps<p class="millAmount">500</p></div>
+            <div class="factoryUpgrade">Cookie Factory<br>+100 cps<p class="factoryAmount">8,000</p></div>
+            <div class="businessUpgrade">Cookie Business<br>+1,000 cps<p class="businessAmount">20,000</p></div>
+            <div class="monopolyUpgrade">Cookie Monopoly<br>+100,000 cps<p class="monopolyAmount">10,000,000</p></div>
+        </footer>
+
+        <noscript>Sorry, your browser does not support JavaScript. Therefore this game will not work.</noscript>
+
+    </body>
+</html>
